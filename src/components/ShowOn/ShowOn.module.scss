@@ -1,0 +1,28 @@
+@keyframes ShowOn {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: var(--show-on-bg-color);
+        animation: ShowOn 0.5s linear;
+    }
+}
+.none {
+    display: none;
+}

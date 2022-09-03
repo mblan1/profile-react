@@ -1,0 +1,39 @@
+@keyframes FadeIn {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contains {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    animation: FadeIn 0.5s linear;
+}
+
+.image {
+    width: 33.33%;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 60%;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

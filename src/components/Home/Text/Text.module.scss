@@ -1,0 +1,32 @@
+.title {
+    padding-left: 70px;
+    line-height: 62px;
+    font-weight: 700;
+    font-size: 44px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.name {
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        height: 4px;
+        width: 40px;
+        border-radius: 10px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: 0;
+        top: 30px;
+    }
+}
+
+.desc {
+    display: block;
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: justify;
+}
