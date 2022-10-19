@@ -1,0 +1,27 @@
+.wrapper {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+    position: relative;
+}
+.component {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.title {
+    color: var(--main-color);
+}
+
+.sub_component {
+    color: var(--header-bg);
+    position: absolute;
+    font-size: 110px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 0.7;
+}

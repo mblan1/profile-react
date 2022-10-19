@@ -8,6 +8,7 @@ body[data-theme='dark'] {
     --nav-title-color: #fff;
     --button-title-color: #fff;
     --show-on-bg-color: #2b2a2a;
+    --header-bg: hsla(0, 0%, 100%, 0.07);
 }
 
 body[data-theme='light'] {
@@ -20,6 +21,7 @@ body[data-theme='light'] {
     --nav-title-color: #fff;
     --button-title-color: #666;
     --show-on-bg-color: #eee;
+    --header-bg: rgba(30, 37, 48, 0.07);
 }
 
 * {
@@ -53,3 +55,19 @@ a {
 ul {
     list-style: none;
 }
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    background-clip: content-box;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+// animation

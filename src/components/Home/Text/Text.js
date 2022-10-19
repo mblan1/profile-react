@@ -23,7 +23,6 @@ function Text() {
                 cũng như cộng đồng anh em đóng góp đã truyền động lực cho mình suốt thời gian qua giúp mình không bỏ
                 cuộc.
             </span>
-            {/* Button */}
 
             <Button hoverClass="project-btn-hover" name={config.components.project} link={config.routes.project} />
             <Button className="about-btn" name={config.components.about} link={config.routes.about} />

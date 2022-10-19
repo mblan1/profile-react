@@ -1,10 +1,13 @@
+import { Project } from '../../components/Project';
 import { ShowOn } from '../../components/ShowOn';
+import { Header } from '../../layouts/Header';
 
 function ProjectPage() {
     return (
         <div>
             <ShowOn />
-            <h2>Project Page</h2>
+            <Header firstTitle={'My'} colorTitle={'project'} subTitle={'works'} />
+            <Project />
         </div>
     );
 }
