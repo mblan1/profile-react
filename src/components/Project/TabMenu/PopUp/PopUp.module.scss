@@ -122,9 +122,19 @@
 }
 
 .slide-img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    height: 100%;
+    height: 250px;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.slide-img:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 // sub img
@@ -135,6 +145,7 @@
 
 .sub-img {
     width: 100%;
+    height: 75px;
     margin: 10px 10px 10px 0;
     cursor: pointer;
     object-fit: cover;

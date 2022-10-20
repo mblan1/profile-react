@@ -29,29 +29,26 @@ function PopUp({ popup, setPopUp, data, children }) {
                             <Slider data={dataItem} />
                         </div>
                         <div className={cx('project-details')}>
-                            <header className={cx('header')}>Movie app</header>
-                            <p className={cx('desc')}>
-                                フロントエンドはSCSSとReact,バックエンドはTMDB
-                                APIを利用して、動画配信サービスのネットフリックスのようなWEBサイトを作成しました。
-                            </p>
+                            <header className={cx('header')}>{dataItem.app}</header>
+                            <p className={cx('desc')}>{dataItem.desc}</p>
                             <ul>
                                 <li className={cx('sub-desc')}>
-                                    Created: <span className={cx('desc-data')}>20202</span>
+                                    Created: <span className={cx('desc-data')}>{dataItem.created}</span>
                                 </li>
                                 <li className={cx('sub-desc')}>
-                                    Role: <span className={cx('desc-data')}>20202</span>
+                                    Role: <span className={cx('desc-data')}>{dataItem.role}</span>
                                 </li>
                                 <li className={cx('sub-desc')}>
-                                    Fronted: <span className={cx('desc-data')}>20202</span>
+                                    Fronted: <span className={cx('desc-data')}>{dataItem.frontend}</span>
                                 </li>
                                 <li className={cx('sub-desc')}>
-                                    Backend: <span className={cx('desc-data')}>20202</span>
+                                    Backend: <span className={cx('desc-data')}>{dataItem.backend}</span>
                                 </li>
                                 <li className={cx('sub-desc')}>
                                     Demo:{' '}
                                     <span className={cx('desc-data')}>
-                                        <a className={cx('demo')} href="/">
-                                            ahduood
+                                        <a className={cx('demo')} href={dataItem.demo} target="_blank" rel="noreferrer">
+                                            {dataItem.demo}
                                         </a>
                                     </span>
                                 </li>

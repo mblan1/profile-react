@@ -29,17 +29,19 @@ function TabItem({ tab, data }) {
         const result = tabFilter.map((p, index) => {
             return (
                 <PopUp key={index} data={count} popup={popUp} setPopUp={setPopUp}>
-                    <div
-                        key={index}
-                        onClick={() => {
-                            handleClick();
-                            setCount(p.id);
-                        }}
-                        className={cx('project-item')}
-                        style={{ backgroundImage: `url(${p.bgImage})` }}
-                    >
-                        <h3 className={cx('project-name')}>{p.name}</h3>
-                    </div>
+                    <>
+                        <div
+                            key={index}
+                            onClick={() => {
+                                handleClick();
+                                setCount(p.id);
+                            }}
+                            className={cx('project-item')}
+                            style={{ backgroundImage: `url(${p.bgImage})` }}
+                        >
+                            <h3 className={cx('project-name')}>{p.name}</h3>
+                        </div>
+                    </>
                 </PopUp>
             );
         });
@@ -48,19 +50,21 @@ function TabItem({ tab, data }) {
         const tabFilter = data.filter((file) => file.type === 'react');
         const result = tabFilter.map((p, index) => {
             return (
-                <PopUp key={index} data={count} popup={popUp} setPopUp={setPopUp}>
-                    <div
-                        key={index}
-                        onClick={() => {
-                            handleClick();
-                            setCount(p.id);
-                        }}
-                        className={cx('project-item')}
-                        style={{ backgroundImage: `url(${p.bgImage})` }}
-                    >
-                        <h3 className={cx('project-name')}>{p.name}</h3>
-                    </div>
-                </PopUp>
+                <>
+                    <PopUp key={index} data={count} popup={popUp} setPopUp={setPopUp}>
+                        <div
+                            key={index}
+                            onClick={() => {
+                                handleClick();
+                                setCount(p.id);
+                            }}
+                            className={cx('project-item')}
+                            style={{ backgroundImage: `url(${p.bgImage})` }}
+                        >
+                            <h3 className={cx('project-name')}>{p.name}</h3>
+                        </div>
+                    </PopUp>
+                </>
             );
         });
 
