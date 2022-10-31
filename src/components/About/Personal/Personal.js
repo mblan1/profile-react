@@ -19,7 +19,7 @@ function Personal() {
                             <Details title={'Last Name'} value={'Lan'} />
                             <Details title={'Birthday'} value={'20 Years'} />
                             <Details title={'Sex'} value={'Male'} />
-                            <Details title={'National'} value={'VietNam'} />
+                            <Details title={'Nationality'} value={'VietNamese'} />
                             <Details title={'Address'} value={'Thanh Hoa'} />
                             <Details title={'Phone'} value={'0763094xxx'} />
                             <Details title={'Facebook'} value={'facebook.com/lanle.050802'} />
