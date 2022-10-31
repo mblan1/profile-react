@@ -71,12 +71,22 @@
     }
 }
 
-.errors {
+.errors,
+.success {
     position: absolute;
     bottom: 13px;
     left: 8px;
     color: red;
     font-size: 12px;
+}
+
+.success {
+    display: block;
+    color: greenyellow;
+}
+
+.none {
+    display: none;
 }
 
 .half-width {

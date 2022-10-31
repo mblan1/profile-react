@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -12,12 +12,17 @@ import styles from './MailForm.module.scss';
 const cx = classNames.bind(styles);
 
 function MailForm() {
+    const [success, setSuccess] = useState(false);
     const form = useRef();
 
     const sendEmail = () => {
         emailjs.sendForm('snow_0508', 'template_0zshob8', form.current, 'NDCOHZbRdDo87M8-Q').then(
             (result) => {
                 form.current.reset();
+                setSuccess(true);
+                setTimeout(() => {
+                    setSuccess(false);
+                }, 3000);
                 console.log(result.text);
             },
             (error) => {
@@ -92,6 +97,7 @@ function MailForm() {
                         placeholder="Your Message"
                     ></textarea>
                     <p className={cx('errors')}>{errors.message?.message}</p>
+                    <p className={cx(success ? 'success' : 'none')}>Send mail success !</p>
                 </div>
 
                 <div className={cx('submit')}>
