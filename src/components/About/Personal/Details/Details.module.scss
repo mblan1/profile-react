@@ -1,8 +1,14 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     display: flex;
     padding-bottom: 20px;
     width: 50%;
     flex-wrap: wrap;
+
+    @include m-mobile {
+        width: 100%;
+    }
 }
 
 .info {

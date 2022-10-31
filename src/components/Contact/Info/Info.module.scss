@@ -1,5 +1,11 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     padding-right: 15px;
+
+    @include tablet {
+        margin-bottom: 46px;
+    }
 }
 
 .header {

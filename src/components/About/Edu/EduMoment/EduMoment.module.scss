@@ -1,8 +1,14 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     width: 50%;
     display: flex;
     position: relative;
     margin-bottom: 45px;
+
+    @include tablet {
+        width: auto;
+    }
 }
 
 .icon {

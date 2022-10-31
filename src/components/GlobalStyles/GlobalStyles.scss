@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 // root
+$more-min-width: 462px;
 $mobile-width: 768px;
 $tablet-width: 1120px;
-$desktop-width: 1024px;
 
 @mixin tablet {
     @media (max-width: #{$tablet-width}) {
@@ -13,6 +13,12 @@ $desktop-width: 1024px;
 
 @mixin mobile {
     @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin m-mobile {
+    @media (max-width: #{$more-min-width}) {
         @content;
     }
 }

@@ -1,6 +1,13 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     flex: 1;
     padding-left: 15px;
+
+    @include tablet {
+        margin-bottom: 96px;
+        padding: 0;
+    }
 }
 
 .input {
@@ -27,6 +34,10 @@
 .name,
 .email {
     width: calc(50% - 15px);
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .name > input,
@@ -41,6 +52,9 @@
 .contains {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+        display: block;
+    }
 }
 
 .field {

@@ -16,12 +16,10 @@ function Text() {
             </h1>
 
             <span className={cx('desc')}>
-                Hello mọi người! Mình là Lân, đang là sinh viên năm 3 trường Đại học Mỏ - Địa Chất tại hà Nội. Cơ duyên
-                mình đến với IT là nhờ các sự tích "IT là vua của các nghề", hay câu chuyện "thằng em học BK cơ khí sinh
-                năm 96". Tháng 3/2022, tình cờ biết đến cộng đồng F8 Fullstack của anh Sơn, mình đã hoàn thành các khóa
-                học HTML, CSS, ReactJS và có được một số dự án cá nhân. Trải qua nhiều cay đắng, thật sự cảm ơn anh Sơn
-                cũng như cộng đồng anh em đóng góp đã truyền động lực cho mình suốt thời gian qua giúp mình không bỏ
-                cuộc.
+                Hello mọi người! Mình là Lân, đang là sinh viên năm 3 trường Đại học Mỏ - Địa Chất tại Hà Nội. Tháng
+                3/2022, tình cờ biết đến cộng đồng F8 Fullstack của anh Sơn, mình đã hoàn thành các khóa học HTML, CSS,
+                ReactJS và có được một số dự án cá nhân. Trải qua nhiều cay đắng, thật sự cảm ơn anh Sơn cũng như cộng
+                đồng anh em đóng góp đã truyền động lực cho mình suốt thời gian qua giúp mình không bỏ cuộc.
             </span>
 
             <Button hoverClass="project-btn-hover" name={config.components.project} link={config.routes.project} />

@@ -1,7 +1,13 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     text-align: center;
     margin-bottom: 32px;
     width: calc(100% / 4);
+
+    @include mobile {
+        width: 50%;
+    }
 }
 
 .img {

@@ -6,17 +6,26 @@ import bootstrap from '../img/bootstrap.png';
 import react from '../img/react.png';
 import sass from '../img/sass.png';
 
+import music1 from '../img/projects/music1.png';
+import music2 from '../img/projects/music2.png';
+import weather1 from '../img/projects/weather1.png';
+import weather2 from '../img/projects/weather2.png';
+import weather3 from '../img/projects/weather3.png';
+import web1 from '../img/projects/web1.png';
+import web2 from '../img/projects/web2.png';
+import profile1 from '../img/projects/profile1.png';
+import profile2 from '../img/projects/profile2.png';
+import profile3 from '../img/projects/profile3.png';
+import profile4 from '../img/projects/profile4.png';
+
 const MyProject = [
     {
         id: 1,
         name: 'profile',
-        bgImage: 'https://cdn.discordapp.com/attachments/887375341180579860/1016240600628080702/unknown.png',
+        bgImage: web1,
         type: 'html',
-        img: [
-            'https://cdn.discordapp.com/attachments/887375341180579860/1016240600628080702/unknown.png',
-            'https://cdn.discordapp.com/attachments/887375341180579860/1017479605218717747/unknown.png',
-        ],
-        app: 'Web',
+        img: [web1, web2],
+        app: 'Profile Web',
         desc: 'Sản phẩm đầu tiên, trang web profile cá nhân sử dụng HTML, CSS và JS. Web về thông tin cá nhân bản thân, các sở thích và mục tiêu tương lai!',
         created: '2022',
         role: 'Frontend',
@@ -27,12 +36,9 @@ const MyProject = [
     {
         id: 2,
         name: 'music player',
-        bgImage: 'https://cdn.discordapp.com/attachments/887375341180579860/1016240498106716220/unknown.png',
-        type: 'react',
-        img: [
-            'https://cdn.discordapp.com/attachments/887375341180579860/1016240498106716220/unknown.png',
-            'https://cdn.discordapp.com/attachments/915218130811379822/1032489358898495518/unknown.png',
-        ],
+        bgImage: music1,
+        type: 'html',
+        img: [music1, music2],
         app: 'Music App',
         desc: 'Trang Web nghe nhạc được viết bằng HTML, CSS và JS. App có chức năng phát nhạc, tạm dừng, ngẫu nhiên, lặp lại, điều chỉnh âm lương, next hoặc prev bài ',
         created: '2022',
@@ -44,13 +50,9 @@ const MyProject = [
     {
         id: 3,
         name: 'weather',
-        bgImage: 'https://cdn.discordapp.com/attachments/915218130811379822/1032493423434936420/unknown.png',
-        type: 'html',
-        img: [
-            'https://cdn.discordapp.com/attachments/915218130811379822/1032493423434936420/unknown.png',
-            'https://cdn.discordapp.com/attachments/915218130811379822/1032493498953383986/unknown.png',
-            'https://cdn.discordapp.com/attachments/915218130811379822/1032493692159803432/unknown.png',
-        ],
+        bgImage: weather1,
+        type: 'api',
+        img: [weather1, weather2, weather3],
         app: 'Weather App',
         desc: 'Trang Web thời tiết, được viết bằng HTML, CSS, JS. App có chức năng hiển thị thông tin thời tiết của nơi sau khi tìm kiếm, toggle Dark Mode.',
         created: '2022',
@@ -58,6 +60,20 @@ const MyProject = [
         frontend: 'HTML, CSS, JS',
         backend: 'null',
         demo: 'https://mblan1.github.io/weatherApp/',
+    },
+    {
+        id: 4,
+        name: 'profile',
+        bgImage: profile1,
+        type: 'react',
+        img: [profile1, profile2, profile3, profile4],
+        app: 'Profile React',
+        desc: 'Trang web profile được làm chỉnh chu viết bằng ReactJS, sau hơn tháng tìm tòi và code nên',
+        created: '2022',
+        role: 'Frontend',
+        frontend: 'ReactJS',
+        backend: 'null',
+        demo: '#',
     },
 ];
 

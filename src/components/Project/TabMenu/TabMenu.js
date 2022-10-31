@@ -25,6 +25,9 @@ function TabMenu() {
                 <li onClick={() => setTab(3)} className={cx('tab-item', tab === 3 ? 'active' : '')}>
                     REACT/SCSS
                 </li>
+                <li onClick={() => setTab(4)} className={cx('tab-item', tab === 4 ? 'active' : '')}>
+                    API
+                </li>
             </ul>
             <div className={cx('project')}>
                 <div className={cx('project-contains')}>{<TabItem data={Projects} tab={tab} />}</div>

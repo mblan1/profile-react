@@ -1,4 +1,16 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
+.wrapper {
+    @include tablet {
+        margin-bottom: 96px;
+    }
+}
+
 .edu-moment {
     display: flex;
     flex-wrap: wrap;
+
+    @include tablet {
+        display: block;
+    }
 }

@@ -1,5 +1,15 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     width: 80%;
     margin: auto;
     display: flex;
+
+    @include tablet {
+        display: block;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
 }

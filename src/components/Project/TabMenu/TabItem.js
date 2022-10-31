@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 
 import styles from './TabMenu.module.scss';
@@ -22,6 +22,7 @@ function TabItem({ tab, data }) {
 
     const handleClick = () => {
         handlePopUp();
+        document.body.style.overflow = 'hidden';
     };
 
     if (newTab === 2) {
@@ -65,6 +66,29 @@ function TabItem({ tab, data }) {
                         </div>
                     </PopUp>
                 </>
+            );
+        });
+
+        return result;
+    } else if (newTab === 4) {
+        const tabFilter = data.filter((file) => file.type === 'api');
+        const result = tabFilter.map((p, index) => {
+            return (
+                <Fragment key={index}>
+                    <PopUp key={index} data={count} popup={popUp} setPopUp={setPopUp}>
+                        <div
+                            key={index}
+                            onClick={() => {
+                                handleClick();
+                                setCount(p.id);
+                            }}
+                            className={cx('project-item')}
+                            style={{ backgroundImage: `url(${p.bgImage})` }}
+                        >
+                            <h3 className={cx('project-name')}>{p.name}</h3>
+                        </div>
+                    </PopUp>
+                </Fragment>
             );
         });
 

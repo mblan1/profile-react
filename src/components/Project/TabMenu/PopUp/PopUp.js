@@ -12,11 +12,13 @@ const cx = classNames.bind(styles);
 function PopUp({ popup, setPopUp, data, children }) {
     const handleClose = () => {
         setPopUp(false);
+        document.body.style.overflow = 'unset';
     };
 
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             if (popup) {
+                document.body.style.overflow = 'unset';
                 setPopUp(false);
                 console.log('Pressed Escape button');
             }
