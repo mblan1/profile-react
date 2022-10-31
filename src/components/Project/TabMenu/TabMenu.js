@@ -5,7 +5,7 @@ import styles from './TabMenu.module.scss';
 
 import TabItem from './TabItem';
 
-import { MyProject } from '../../../assets/projects/MyProject';
+import { MyProject } from '../../../assets/data/BigData';
 
 const cx = classNames.bind(styles);
 

@@ -1,3 +1,11 @@
+import html from '../img/html.png';
+import css from '../img/css.png';
+import js from '../img/js.png';
+import java from '../img/java.png';
+import bootstrap from '../img/bootstrap.png';
+import react from '../img/react.png';
+import sass from '../img/sass.png';
+
 const MyProject = [
     {
         id: 1,
@@ -53,4 +61,57 @@ const MyProject = [
     },
 ];
 
-export { MyProject };
+const SkillData = [
+    {
+        id: 1,
+        logo: html,
+        skillName: 'html',
+    },
+    {
+        id: 2,
+        logo: css,
+        skillName: 'css',
+    },
+    {
+        id: 3,
+        logo: js,
+        skillName: 'js',
+    },
+    {
+        id: 4,
+        logo: java,
+        skillName: 'java',
+    },
+    {
+        id: 5,
+        logo: react,
+        skillName: 'react',
+    },
+    {
+        id: 6,
+        logo: bootstrap,
+        skillName: 'bootstrap',
+    },
+    {
+        id: 7,
+        logo: sass,
+        skillName: 'sass',
+    },
+];
+
+const EduData = [
+    {
+        id: 1,
+        time: '2017-2020',
+        title: 'Tinh Gia 1 High School',
+        desc: 'Một ngôi truòng với bao cuộc vui và kỷ niệm khó quên',
+    },
+    {
+        id: 2,
+        time: '2020-2025',
+        title: 'Hanoi University of Mining and Geology',
+        desc: 'Một nơi mà tôi đang học để trở thành một kỹ sư CNTT',
+    },
+];
+
+export { MyProject, SkillData, EduData };

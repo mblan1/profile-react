@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+// root
+$mobile-width: 768px;
+$tablet-width: 1120px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
 body[data-theme='dark'] {
     --main-color: #ffb400;
     --bg-color: black;
@@ -9,6 +28,7 @@ body[data-theme='dark'] {
     --button-title-color: #fff;
     --show-on-bg-color: #2b2a2a;
     --header-bg: hsla(0, 0%, 100%, 0.07);
+    --toggle-color: #252525;
 }
 
 body[data-theme='light'] {
@@ -22,6 +42,7 @@ body[data-theme='light'] {
     --button-title-color: #666;
     --show-on-bg-color: #eee;
     --header-bg: rgba(30, 37, 48, 0.07);
+    --toggle-color: #000;
 }
 
 * {

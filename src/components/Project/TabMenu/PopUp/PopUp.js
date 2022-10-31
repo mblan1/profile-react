@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import styles from './PopUp.module.scss';
 import Slider from './Slider';
 
-import { MyProject } from '../../../../assets/projects/MyProject';
+import { MyProject } from '../../../../assets/data/BigData';
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +13,15 @@ function PopUp({ popup, setPopUp, data, children }) {
     const handleClose = () => {
         setPopUp(false);
     };
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (popup) {
+                setPopUp(false);
+                console.log('Pressed Escape button');
+            }
+        }
+    });
 
     const dataItem = MyProject[data - 1];
     return (

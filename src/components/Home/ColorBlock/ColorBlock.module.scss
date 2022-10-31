@@ -1,3 +1,5 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
 .color-block {
     position: fixed;
     width: 100%;
@@ -8,4 +10,8 @@
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg);
     z-index: -9999;
+
+    @include tablet {
+        display: none;
+    }
 }

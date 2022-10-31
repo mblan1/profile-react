@@ -1,4 +1,5 @@
 @use 'sass:math';
+@import '../../GlobalStyles/GlobalStyles.scss';
 
 @keyframes opacity {
     0% {
@@ -22,11 +23,20 @@
 
 .wrapper {
     padding: 0 30px;
+
+    @include tablet {
+        margin-bottom: 96px;
+    }
 }
 
 .tab-list {
     display: flex;
     justify-content: center;
+
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .tab-item {
@@ -43,6 +53,12 @@
     &:hover {
         background-color: var(--main-color);
     }
+
+    @include mobile {
+        width: calc(50% - 16px);
+        padding: 12px 0;
+        text-align: center;
+    }
 }
 
 .active {
@@ -58,7 +74,7 @@
 
 .project-contains {
     display: flex;
-    width: 80%;
+    // width: 80%;
     min-width: 100%;
     flex-wrap: wrap;
 }
@@ -109,13 +125,28 @@
             visibility: unset;
         }
     }
+
+    @include tablet {
+        width: calc(50% - 26px);
+        padding: 12% 0;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 28% 0;
+    }
 }
 
 .project-name {
+    top: calc(50% - 12px);
+    right: 0;
+    left: 0;
+    bottom: 0;
     color: #fff;
-    width: 50px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(10%, -50%);
+    text-align: center;
+    // width: 50px;
+    // -webkit-transform: translate(-50%, -50%);
+    // transform: translate(10%, -50%);
     font-weight: 800;
     font-size: 24px;
     text-transform: uppercase;

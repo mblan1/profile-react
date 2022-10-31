@@ -1,3 +1,5 @@
+@import '../../GlobalStyles/GlobalStyles.scss';
+
 .title {
     padding-left: 70px;
     line-height: 62px;
@@ -5,6 +7,18 @@
     font-size: 44px;
     margin: 10px 0;
     position: relative;
+
+    @include tablet {
+        padding: 0;
+        text-align: center;
+    }
+
+    @include mobile {
+        font-size: 29px;
+        padding: 0;
+        line-height: normal;
+        text-align: center;
+    }
 }
 
 .name {
@@ -21,6 +35,12 @@
         left: 0;
         top: 30px;
     }
+
+    @include tablet {
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .desc {
@@ -29,4 +49,7 @@
     font-size: 16px;
     line-height: 35px;
     text-align: justify;
+
+    @include mobile {
+    }
 }

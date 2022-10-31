@@ -1,0 +1,35 @@
+.wrapper {
+    margin-bottom: 120px;
+    // border-bottom: 1px solid #000;
+}
+
+.header {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.contains {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail {
+    display: flex;
+}
+
+.detail_1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}

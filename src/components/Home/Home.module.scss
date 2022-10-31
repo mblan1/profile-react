@@ -1,3 +1,5 @@
+@import '../GlobalStyles/GlobalStyles.scss';
+
 @keyframes FadeIn {
     from {
         transform: translateY(10%);
@@ -11,6 +13,12 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
+
+    @include tablet {
+        overflow: unset;
+        margin: 61px 0 96px 0;
+        height: auto;
+    }
 }
 
 .contains {
@@ -19,6 +27,12 @@
     display: flex;
     padding: 0 30px;
     animation: FadeIn 0.75s ease-in-out;
+
+    @include tablet {
+        display: block;
+        padding: 0;
+        position: unset;
+    }
 }
 
 .image {
@@ -28,6 +42,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        margin: auto;
+        height: 270px;
+        width: 270px;
+        padding: 0;
+    }
 }
 
 .text {
@@ -36,4 +57,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablet {
+        margin: auto;
+        padding: 0;
+    }
+
+    @include mobile {
+        width: 90%;
+    }
 }

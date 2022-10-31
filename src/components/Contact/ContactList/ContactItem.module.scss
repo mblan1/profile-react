@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--main-color);
+    padding-right: 16px;
+}
+
+.title {
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin: 4px 0;
+}
+
+.value {
+    display: block;
+    font-weight: bold;
+    margin-top: 4px;
+}
