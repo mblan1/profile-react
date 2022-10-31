@@ -22,7 +22,7 @@ function MailForm() {
                 setSuccess(true);
                 setTimeout(() => {
                     setSuccess(false);
-                }, 3000);
+                }, 5000);
                 console.log(result.text);
             },
             (error) => {

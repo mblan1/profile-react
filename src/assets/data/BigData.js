@@ -120,7 +120,7 @@ const EduData = [
         id: 1,
         time: '2017-2020',
         title: 'Tinh Gia 1 High School',
-        desc: 'Một ngôi truòng với bao cuộc vui và kỷ niệm khó quên',
+        desc: 'Một ngôi trường với bao cuộc vui và kỷ niệm khó quên',
     },
     {
         id: 2,
