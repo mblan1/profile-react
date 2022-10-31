@@ -128,6 +128,12 @@ const EduData = [
         title: 'Hanoi University of Mining and Geology',
         desc: 'Một nơi mà tôi đang học để trở thành một kỹ sư CNTT',
     },
+    {
+        id: 3,
+        time: '2020-',
+        title: 'F8 - Fullstack',
+        desc: 'Nơi đào tạo lập trình viên Web Fullstack',
+    },
 ];
 
 export { MyProject, SkillData, EduData };

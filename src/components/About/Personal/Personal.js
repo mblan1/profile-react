@@ -33,8 +33,7 @@ function Personal() {
                 {/* card */}
                 <div data-aos="fade-up-left" className={cx('card')}>
                     <Card count={'1'} value={'Year(s) Experience'} />
-                    <Card count={'1'} value={'Year(s) Experience'} />
-                    <Card count={'1'} value={'Year(s) Experience'} />
+                    <Card count={'4'} value={'Completed Project(s)'} />
                 </div>
             </div>
         </div>
