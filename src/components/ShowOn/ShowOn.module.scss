@@ -21,6 +21,7 @@
         height: 100%;
         background-color: var(--show-on-bg-color);
         animation: ShowOn 0.5s linear;
+        -webkit-animation: ShowOn 0.5s linear;
     }
 }
 .none {

@@ -27,6 +27,7 @@
     display: flex;
     padding: 0 30px;
     animation: FadeIn 0.75s ease-in-out;
+    -webkit-animation: FadeIn 0.75s ease-in-out;
 
     @include tablet {
         display: block;

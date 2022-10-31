@@ -92,9 +92,12 @@
     position: relative;
     animation: fade-right 0.5s ease-in-out 1 forwards;
     animation-iteration-count: 1;
+    -webkit-animation: fade-right 0.5s ease-in-out 1 forwards;
+    -webkit-animation-iteration-count: 1;
     @for $i from 1 through 7 {
         &:nth-child(#{$i}) {
             animation-delay: #{math.div($i, 5)}s;
+            -webkit-animation-delay: #{math.div($i, 5)}s;
         }
     }
 
