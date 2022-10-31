@@ -51,7 +51,7 @@ function TabItem({ tab, data }) {
         const tabFilter = data.filter((file) => file.type === 'react');
         const result = tabFilter.map((p, index) => {
             return (
-                <>
+                <Fragment key={index}>
                     <PopUp key={index} data={count} popup={popUp} setPopUp={setPopUp}>
                         <div
                             key={index}
@@ -65,7 +65,7 @@ function TabItem({ tab, data }) {
                             <h3 className={cx('project-name')}>{p.name}</h3>
                         </div>
                     </PopUp>
-                </>
+                </Fragment>
             );
         });
 

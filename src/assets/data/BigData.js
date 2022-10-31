@@ -73,7 +73,7 @@ const MyProject = [
         role: 'Frontend',
         frontend: 'ReactJS',
         backend: 'null',
-        demo: '#',
+        demo: 'https://lelan-profile.netlify.app',
     },
 ];
 
