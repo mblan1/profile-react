@@ -17,7 +17,7 @@ function Info() {
             </p>
             <ContactItem icon={faLocationDot} title={'address'} value={'VietNam'} />
             <ContactItem icon={faEnvelopeOpen} title={'Email'} value={'contact.lelan0508@gmail.com'} />
-            <ContactItem icon={faPhone} title={'Phone'} value={'0763094xxx'} />
+            <ContactItem icon={faPhone} title={'Phone'} value={'0763xxx861'} />
             <div className={cx('link')}>
                 <ContactLink icon={faFacebook} link={'https://www.facebook.com/lanle.050802'} />
                 <ContactLink icon={faInstagram} link={'https://www.instagram.com/lanle.050802/'} />
