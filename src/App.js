@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { profilePage } from './routers';
 import { DefaultLayout } from './layouts/DefaultLayout';
+
 function App() {
     return (
         <Router>
