@@ -17,6 +17,10 @@ import profile1 from '../img/projects/profile1.png';
 import profile2 from '../img/projects/profile2.png';
 import profile3 from '../img/projects/profile3.png';
 import profile4 from '../img/projects/profile4.png';
+import letter1 from '../img/projects/letter1.png';
+import letter2 from '../img/projects/letter2.png';
+import letter3 from '../img/projects/letter3.png';
+import letter4 from '../img/projects/letter4.png';
 
 const MyProject = [
     {
@@ -74,6 +78,20 @@ const MyProject = [
         frontend: 'ReactJS',
         backend: 'null',
         demo: 'https://lelan-profile.netlify.app',
+    },
+    {
+        id: 5,
+        name: 'letter',
+        bgImage: letter1,
+        type: 'react',
+        img: [letter1, letter2, letter3, letter4],
+        app: 'Letter React',
+        desc: 'Trang Web giúp bạn gửi tâm tư, hình ảnh, cảm xúc của bạn tới một người nào đó với giao diện dễ nhìn, dễ thao tác và đơn giản',
+        created: '2023',
+        role: 'Frontend, Backend',
+        frontend: 'Vite-ReactJS',
+        backend: 'NodeJS, MongoDB, ExpressJS, Firebase',
+        demo: 'https://letter-lelan.netlify.app/',
     },
 ];
 
