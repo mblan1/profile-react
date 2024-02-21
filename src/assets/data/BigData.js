@@ -88,7 +88,7 @@ const MyProject = [
         app: 'Letter React',
         desc: 'Trang Web giúp bạn gửi tâm tư, hình ảnh, cảm xúc của bạn tới một người nào đó với giao diện dễ nhìn, dễ thao tác và đơn giản',
         created: '2023',
-        role: 'Frontend, Backend',
+        role: 'Fullstack',
         frontend: 'Vite-ReactJS',
         backend: 'NodeJS, MongoDB, ExpressJS, Firebase',
         demo: 'https://letter-lelan.netlify.app/',
