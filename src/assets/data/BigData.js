@@ -77,7 +77,7 @@ const MyProject = [
         role: 'Frontend',
         frontend: 'ReactJS',
         backend: 'null',
-        demo: 'https://lelan-profile.netlify.app',
+        demo: 'https://snw.id.vn/',
     },
     {
         id: 5,
@@ -91,7 +91,7 @@ const MyProject = [
         role: 'Fullstack',
         frontend: 'Vite-ReactJS',
         backend: 'NodeJS, MongoDB, ExpressJS, Firebase',
-        demo: 'https://letter-lelan.netlify.app/',
+        demo: 'https://letter.snw.id.vn/',
     },
 ];
 
