@@ -21,6 +21,9 @@ import letter1 from '../img/projects/letter1.png';
 import letter2 from '../img/projects/letter2.png';
 import letter3 from '../img/projects/letter3.png';
 import letter4 from '../img/projects/letter4.png';
+import SChat1 from '../img/projects/schat1.png';
+import SChat2 from '../img/projects/schat2.png';
+import SChat3 from '../img/projects/schat3.png';
 
 const MyProject = [
     {
@@ -92,6 +95,20 @@ const MyProject = [
         frontend: 'Vite-ReactJS',
         backend: 'NodeJS, MongoDB, ExpressJS, Firebase',
         demo: 'https://letter.snw.id.vn/',
+    },
+    {
+        id: 6,
+        name: 'SChat',
+        bgImage: SChat1,
+        type: 'react',
+        img: [SChat1, SChat2, SChat3],
+        app: 'SChat App',
+        desc: 'Một ứng dụng nhắn tin trực tuyến dựa trên Discord và Messenger, được viết bằng ReactJS, NodeJS, ExpressJS, Firebase',
+        created: '2024',
+        role: 'Fullstack',
+        frontend: 'Vite-ReactJS',
+        backend: 'NodeJS, ExpressJS, Firebase',
+        demo: 'https://schat.snw.id.vn/',
     },
 ];
 
