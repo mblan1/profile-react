@@ -4,10 +4,12 @@ import styles from './Personal.module.scss';
 import { Details } from './Details';
 import { Card } from './Card';
 import { Button } from '../../Button';
+import { MyProject } from '../../../assets/data/BigData';
 
 const cx = classNames.bind(styles);
 
 function Personal() {
+    const currentYear = new Date().getFullYear();
     return (
         <div className={cx('wrapper')}>
             <h3 className={cx('header')}>Personal Infos</h3>
@@ -17,7 +19,7 @@ function Personal() {
                         <div className={cx('detail_1')}>
                             <Details title={'First Name'} value={'Le'} />
                             <Details title={'Last Name'} value={'Lan'} />
-                            <Details title={'Birthday'} value={'20 Years'} />
+                            <Details title={'Birthday'} value={`${currentYear - 2002} Years`} />
                             <Details title={'Sex'} value={'Male'} />
                             <Details title={'Nationality'} value={'VietNamese'} />
                             <Details title={'Address'} value={'Thanh Hoa'} />
@@ -33,7 +35,7 @@ function Personal() {
                 {/* card */}
                 <div data-aos="fade-up-left" className={cx('card')}>
                     <Card count={'0'} value={'Year(s) Experience'} />
-                    <Card count={'4'} value={'Completed Project(s)'} />
+                    <Card count={MyProject.length} value={'Completed Project(s)'} />
                 </div>
             </div>
         </div>

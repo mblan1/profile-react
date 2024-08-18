@@ -21,7 +21,7 @@ import letter1 from '../img/projects/letter1.png';
 import letter2 from '../img/projects/letter2.png';
 import letter3 from '../img/projects/letter3.png';
 import letter4 from '../img/projects/letter4.png';
-import SChat1 from '../img/projects/schat1.png';
+import SChat1 from '../img/projects/schat/schat.gif';
 import SChat2 from '../img/projects/schat2.png';
 import SChat3 from '../img/projects/schat3.png';
 
